@@ -22,7 +22,6 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  addTodo: formData => dispatch({ type: 'ADD_TODO', payload: formData })
   delete: id => dispatch({type: 'DELETE_TODO', payload: id})
 })
 
