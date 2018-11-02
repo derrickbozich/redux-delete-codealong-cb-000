@@ -25,4 +25,4 @@ const mapDispatchToProps = dispatch => ({
   delete: id => dispatch({type: 'DELETE_TODO', payload: id})
 })
 
-export default connect(mapStateToProps)(TodosContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(TodosContainer);
